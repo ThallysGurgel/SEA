@@ -1,0 +1,271 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.sea-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0274bb;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #0274bb;
+}
+
+h2.titulo-curso {
+    color: #0274bb;
+    font-size: 28px;
+    text-align: center;
+}
+
+.mobile-button {
+    display: none;
+
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgba(112, 112, 112, 0.53);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.sea-contato button:hover {
+    box-shadow: 0px 0px 8px #0274bb;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILOS ESPECIALIDAES */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff59;
+}
+
+.especialidades .especialidades-box i {
+    color: #0274bb;
+    font-size: 60px;
+
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 24px;
+    margin: 2px 0px;
+}
+
+/* ESTILO CURSOS */
+
+section.cursos {
+    padding: 40px 4%;
+}
+
+section.cursos .flex {
+    justify-content: space-around;
+}
+
+.cursos-box {
+    width: 180px;
+    height: 200px;
+    border-radius: 12px;
+    margin-top: 45px;
+}
+
+.cursos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #ffffff59;
+}
+
+.cursos-img {
+    width: 176px;
+    height: 130px;
+    border-radius: 11px;
+}
+
+.cursos-box h1 {
+    font-size: .9rem;
+    color: white;
+    text-align: center;
+}
+
+.cursos button {
+    background-color: #0274bb;
+    border: none;
+    padding: 2px;
+    color: #fff;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.cursos button:hover {
+    box-shadow: 0px 0px 9px white;
+    transform: scale(1.05);
+    transition: img 1s;
+}
+
+.cursos .cursos-titulos h3 {
+    font-size: 24px;
+    margin: 2px 0px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    .sea-contato {
+        display: none;
+    }
+
+    section.topo-do-site .flex {
+        gap: 20px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    .especialidades .especialidades-box {
+        text-align: center;
+    }
+
+    section.cursos {
+        padding: 40px 25%;
+    }
+    .menu-desktop{
+        text-align: right;
+    
+    }
+}
